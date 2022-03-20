@@ -25,11 +25,9 @@ jobs:
         with:
           package: imaginari
           ignore: "*_event.dart, *_state.dart"
-      - run: |
-          cd app
-          flutter pub get
-          flutter analyze
-          flutter test --coverage .
+      - run: flutter pub get
+      - run: flutter analyze
+      - run: flutter test --coverage .
       - uses: codecov/codecov-action@v2
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
