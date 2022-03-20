@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.14)
-project(imaginari LANGUAGES CXX)
+project(imaginario LANGUAGES CXX)
 
-set(BINARY_NAME "imaginari")
+set(BINARY_NAME "imaginario")
 
 cmake_policy(SET CMP0063 NEW)
 

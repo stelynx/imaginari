@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.stelynx" "\0"
-            VALUE "FileDescription", "imaginari" "\0"
+            VALUE "FileDescription", "imaginario" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "imaginari" "\0"
+            VALUE "InternalName", "imaginario" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2022 com.stelynx. All rights reserved." "\0"
-            VALUE "OriginalFilename", "imaginari.exe" "\0"
-            VALUE "ProductName", "imaginari" "\0"
+            VALUE "OriginalFilename", "imaginario.exe" "\0"
+            VALUE "ProductName", "imaginario" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

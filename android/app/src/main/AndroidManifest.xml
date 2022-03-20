@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.stelynx.imaginari">
+    package="com.stelynx.imaginario">
    <application
-        android:label="imaginari"
+        android:label="imaginario"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

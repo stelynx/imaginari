@@ -1,4 +1,4 @@
-package com.stelynx.imaginari
+package com.stelynx.imaginario
 
 import io.flutter.embedding.android.FlutterActivity
 

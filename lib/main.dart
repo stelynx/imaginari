@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const ImaginariApp());
+  runApp(const ImaginarioApp());
 }
 
-/// The entry point of the Imaginari application.
-class ImaginariApp extends StatelessWidget {
-  /// Creates [ImaginariApp].
-  const ImaginariApp({Key? key}) : super(key: key);
+/// The entry point of the Imaginario application.
+class ImaginarioApp extends StatelessWidget {
+  /// Creates [ImaginarioApp].
+  const ImaginarioApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Imaginari',
+      title: 'Imaginario',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),

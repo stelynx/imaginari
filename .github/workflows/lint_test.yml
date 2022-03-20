@@ -23,11 +23,11 @@ jobs:
           channel: "stable"
       - uses: stelynx/dart-full-coverage@v1.0.5
         with:
-          package: imaginari
+          package: imaginario
           ignore: "*_event.dart, *_state.dart"
       - run: flutter pub get
       - run: flutter analyze
-      - run: flutter test --coverage .
-      - uses: codecov/codecov-action@v2
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
+      # - run: flutter test --coverage .
+      # - uses: codecov/codecov-action@v2
+      #   with:
+      #     token: ${{ secrets.CODECOV_TOKEN }}
