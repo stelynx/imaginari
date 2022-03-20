@@ -1,0 +1,33 @@
+name: "Lint & Test"
+
+on:
+  push:
+    paths:
+      - "lib/**"
+
+jobs:
+  build:
+    name: Lint and Test
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 10
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-java@v1
+        with:
+          java-version: "12.x"
+      - uses: subosito/flutter-action@v1
+        with:
+          channel: "stable"
+      - uses: stelynx/dart-full-coverage@v1.0.5
+        with:
+          package: imaginari
+          ignore: "*_event.dart, *_state.dart"
+      - run: flutter pub get
+      - run: flutter analyze
+      - run: flutter test --coverage .
+      - uses: codecov/codecov-action@v2
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
